@@ -1,0 +1,36 @@
+
+.products-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.products-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 20px; 
+
+}
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

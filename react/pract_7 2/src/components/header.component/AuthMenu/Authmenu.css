@@ -1,0 +1,10 @@
+.reg-btn{
+    display: flex;
+    gap: 10px;
+}
+.log, .create_ac, .check_out{
+    background-color: white;
+    border: none;
+    font-size: 1.2vw;
+    color: #777;
+}

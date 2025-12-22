@@ -1,0 +1,12 @@
+.search-bar{
+    width: 100%;
+    
+}
+.search-bar>input{
+    width: 60%;
+    height: 30px;
+}
+.search-bar>button{
+    background-color: white;
+    border: none;
+}
