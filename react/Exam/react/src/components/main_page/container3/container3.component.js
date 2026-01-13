@@ -1,4 +1,4 @@
-import React from 'react';
+
 import classes from './container3.module.css';
 
 
