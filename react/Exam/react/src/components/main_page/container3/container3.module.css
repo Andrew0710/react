@@ -1,0 +1,154 @@
+.container {
+    width: 100%;
+    padding: 60px 0px;
+    font-family: Inter, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background-color: white;
+}
+
+.topSection {
+    text-align: center;
+}
+
+.trustedTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+.slider {
+    padding: 0px;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slideTrack {
+    display: flex;
+    width: calc(200px * 26); 
+    align-items: center;
+    animation: scroll 60s linear infinite;
+}
+
+.slide {
+    width: 150px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; 
+}
+
+.slide img {
+    width: 100%;
+    height: 40px;
+    transition: filter 0.3s;
+}
+
+.slide img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Починаємо з нуля */
+    }
+    100% {
+        transform: translateX(-50%); /* Їдемо вліво наполовину */
+    }
+}
+
+
+.bottomContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 0px 50px;
+}
+
+.textBlock {
+    width: 55%;
+}
+
+.textBlock p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #212121;
+}
+
+/* === Картка (Кнопка) === */
+.colorCard {
+    width: 35%;
+    background-color: #f7f7f7; /* Світло-сірий фон як на скріні */
+    border: none;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.colorCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.cardLabel {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+.cardContent {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.colorSample {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.colorInfo h3 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.colorInfo p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.hexCode {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    text-transform: uppercase;
+}
+

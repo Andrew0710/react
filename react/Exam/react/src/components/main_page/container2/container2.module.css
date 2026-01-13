@@ -1,0 +1,101 @@
+.container {
+    height: 600px;
+    width: 100%;
+    padding: 20px 90px 20px 90px;
+    display: flex;        /* Це ставить блоки в рядок */
+    align-items: center;  /* Вирівнює по вертикалі по центру */
+    justify-content: center; 
+    font-family: Inter, sans-serif;
+}
+
+.leftbox {
+    width: 55%;          
+    padding-right: 40px;
+    
+}
+
+.maintext {
+    font-size: 4vw;      /* Великий шрифт як на макеті */
+    font-weight: 900;     /* Дуже жирний */
+    line-height: 1.1;     /* Міжрядковий інтервал */
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.decorationImage{
+    position: absolute; 
+    bottom: -30px;       
+    right: 50px;             
+    width: 30%;         
+    transform: rotate(-18deg); 
+}
+
+.text {
+    padding-top: 20px;
+    font-size: 2vw;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1;
+    width: 70%;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;      
+    padding-top: 30px;    
+}
+
+.buttons button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.buttons button:first-child {
+    background-color: #0066ff;
+    color: white;
+}
+.buttons button:first-child:hover {
+    background-color: #0052cc;
+}
+.buttons button:last-child  {
+    background-color: #f0f0f0;
+    color: #333;
+}
+.buttons button:last-child:hover {
+    background-color: #dcdada;
+}
+
+.rightbox {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    
+
+}
+
+.changedcoloros {
+    width: 100%;
+    height: 60%; 
+    display: flex; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); 
+    background-color: white;
+    margin-left: -60px;
+    
+}
+
+.colorColumn {
+    flex: 1; 
+    height: 100%;
+    display: flex;
+    transition: background-color 0.5s ease;
+}
