@@ -5,7 +5,7 @@ import classes from './hoverColorLetters.module.css'
 let indexColor = 0;
 
 export const HoverColorLetters = (props) => {
-    const { text, defaultColor, colors } = props
+    const { text, defaultColor, colors, className } = props
 
     const getLetterColor = () => {
         const color = colors[indexColor]
@@ -17,7 +17,7 @@ export const HoverColorLetters = (props) => {
     }
 
     return (<>
-        <div className={classes.container}>
+        <div className={`${classes.container} ${className ? className : ''}`}>
             {
                 text // => Hello world
                     .split('') // => [H,e,l,l,o, ,w,o,r,l,d]

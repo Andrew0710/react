@@ -17,7 +17,8 @@
 .allmenu{
     width: 35%;
     display: flex;
-    row-gap: 30px;
+    
+    
    
 }
 .menu {
@@ -30,7 +31,7 @@
     font-size: 1.5vw;
     
     /* font: weight 6px; */
-    padding-right: 10px;
+    padding-right: 15px;
     border-right: 1px solid #e0e0e0;
 
 }
@@ -39,6 +40,7 @@
     align-items: center; /* Вирівнює їх по висоті */
     gap: 6px;            /* Відступ між словом Tools і стрілочкою */
     cursor: pointer;
+    
 }
 .menu div:last-child{
     color: rgb(245, 92, 117);
@@ -53,6 +55,7 @@
     display: flex;
     gap: 10px;
     width: 50%;
+    padding-left: 10px;
 }
 
 .registration button {

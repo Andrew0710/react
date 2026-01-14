@@ -1,10 +1,12 @@
 import classes from './header.module.css'
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
 
 
     return (
         <header className={classes.container}>
+
             <div className={classes.title}>coloors</div>
             <div className={classes.allmenu}>
             <div className={classes.menu}>
@@ -16,8 +18,14 @@ export const Header = () => {
                 <div>Go pro</div>
             </div>
             <div className={classes.registration}>
-                <button>Sign in</button>
-                <button>Sign up</button>
+                    <Link to="/login">
+                        <button>Sign in</button>
+                    </Link>
+
+                   
+                    <Link to="/registration">
+                        <button>Sign up</button>
+                    </Link>
             </div>
             </div>
         </header>
