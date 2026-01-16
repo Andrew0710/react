@@ -23,22 +23,22 @@
 }
 .menu {
     width: 50%;
-    /* height: 100%; */
+    
     display: flex;
     justify-content: end;
     align-items: center;
     column-gap: 20px;
     font-size: 1.5vw;
     
-    /* font: weight 6px; */
+  
     padding-right: 15px;
     border-right: 1px solid #e0e0e0;
 
 }
 .menu div:first-child{
-    display: flex;       /* Ставить текст і стрілочку в один рядок */
-    align-items: center; /* Вирівнює їх по висоті */
-    gap: 6px;            /* Відступ між словом Tools і стрілочкою */
+    display: flex;       
+    align-items: center;
+    gap: 6px;            
     cursor: pointer;
     
 }
@@ -66,4 +66,39 @@
     cursor: pointer;
     padding: 8px 16px;
     border-radius: 6px;
+}
+
+
+@media (max-width: 900px) {
+    .menu {
+        gap: 10px;
+        font-size: 14px;
+        padding-right: 10px;
+    }
+    
+    .registration button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    
+    .registration {
+        gap: 5px;
+    }
+
+    .registration button {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
 }

@@ -57,12 +57,12 @@
     transition: 0.2s;
 }
 
-.buttons button:first-child {
-    background-color: #0066ff;
-    color: white;
+.blueBtn {
+    background-color: #076aff !important;
+    color: white !important;
 }
-.buttons button:first-child:hover {
-    background-color: #0052cc;
+.blueBtn:hover {
+    background-color: #004bbc !important; 
 }
 .buttons button:last-child  {
     background-color: #f0f0f0;
@@ -98,4 +98,81 @@
     height: 100%;
     display: flex;
     transition: background-color 0.5s ease;
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        padding: 40px; 
+        flex-direction: row; 
+    }
+
+    .maintext {
+        font-size: 42px;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 100%;
+    }
+
+   
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; 
+        height: auto;
+        padding: 40px 20px;
+        text-align: center; 
+    }
+
+    .leftbox {
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .maintext {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 18px;
+    }
+
+   
+
+    .buttons {
+        flex-direction: column; 
+        width: 100%;
+        gap: 10px;
+    }
+
+    .buttons a {
+        width: 100%; 
+    }
+
+    .buttons button {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .rightbox {
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .changedcoloros {
+        height: 250px; 
+        width: 100%;
+        margin-left: 0;
+    }
 }

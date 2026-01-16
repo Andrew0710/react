@@ -12,7 +12,7 @@ import { Container6 } from './components/main_page/container6/container6.compone
 import { Lover } from './components/lover/lover.component';
 import { Registration } from './components/registration/registration.component'; 
 import { Login } from './components/login/login.component';
-
+import {GeneratorPage} from './components/generatorPage/generatorPage.component';
 
 const MainPage = () => {
   return (
@@ -46,6 +46,8 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registration" element={<Registration />} />
+
+          <Route path="/generator" element={<GeneratorPage />} />
 
         
           <Route path="*" element={<NotFoundPage />} />

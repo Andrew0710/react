@@ -147,3 +147,59 @@
     background-size: cover;
     background-position: center;
 }
+
+
+@media (max-width: 900px) {
+    .leftSide {
+        width: 100%; 
+        padding: 40px 30px;
+    }
+
+    .rightSideBg {
+        display: none;
+    }
+
+    .headerText {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .fullScreen {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .leftSide {
+        padding: 20px; 
+        justify-content: center;
+    }
+
+    .headerText {
+        font-size: 36px; 
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .inputsGroup {
+        padding: 0; 
+    }
+
+    .stdInput {
+        padding: 12px;
+        font-size: 16px; 
+    }
+
+    .submitBtn {
+        padding: 12px;
+    }
+
+    .footerText {
+        font-size: 12px;
+    }
+}

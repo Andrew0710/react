@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import classes from './container2.module.css'
 import { HoverColorLetters } from '../../hoverColorLetters/hoverColorLetters.js'
 import { ReactComponent as AndMuchMoreSvg } from '../../imgs/and_much_more.svg';
+import { Link } from 'react-router-dom';
 
 const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
@@ -48,7 +49,9 @@ export const Container2 = () => {
                 <div className={classes.text}>Create the perfect palette or get inspired by thousands of beautiful color schemes.</div>
 
                 <div className={classes.buttons}>
-                    <button> Start the Generator</button>
+                    <Link to="/generator" style={{ textDecoration: 'none' }}>
+                        <button className={classes.blueBtn}>Start the Generator</button>
+                    </Link>
                     <button> Explore 10M+ Palettes</button>
                 </div>
             </div>

@@ -1,11 +1,11 @@
-/* Замість складних назв — проста "обгортка" */
+
 .fullScreen {
   display: flex;
   width: 100%;
   height: 100vh;
 }
 
-/* Студенти часто називають просто "ліва сторона" */
+
 .leftSide {
   width: 50%;
   display: flex;
@@ -13,7 +13,7 @@
   padding: 40px;
 }
 
-/* Центральний блок */
+
 .centerContent {
   flex: 1;
   display: flex;
@@ -22,7 +22,6 @@
   align-items: center;
 }
 
-/* Просто "блок для логіну" */
 .loginBox {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   width: 50vh;
@@ -32,13 +31,13 @@
   align-items: center;
 }
 
-/* Заголовок H1 */
+
 .headerText {
   font-size: 90px;
   font-weight: bold;
 }
 
-/* Опис під заголовком */
+
 .description {
   text-align: center;
   text-justify: center;
@@ -46,16 +45,15 @@
   color: gray;
 }
 
-/* Права сторона з картинкою */
 .rightSideBg {
   width: 50%;
   height: 100vh;
-  background-image: url('../imgs/bg.png'); /* Перевір шлях */
+  background-image: url('../imgs/bg.png'); 
   background-size: cover;
   background-position: center;
 }
 
-/* Група кнопок */
+
 .buttonsGroup {
   display: flex;
   flex-direction: column;
@@ -66,7 +64,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Звичайна кнопка (біла) */
+
 .simpleBtn {
   display: flex;
   align-items: center;
@@ -93,7 +91,7 @@
   margin-right: 12px;
 }
 
-/* Лінія "OR" */
+
 .orLine {
   display: flex;
   align-items: center;
@@ -116,7 +114,7 @@
   text-transform: uppercase;
 }
 
-/* Синя кнопка — студенти часто називають клас за кольором */
+
 .blueBtn {
   width: 100%;
   padding: 14px;
@@ -136,7 +134,7 @@
   background-color: #1d4ed8;
 }
 
-/* Текст знизу */
+
 .bottomLinks {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -149,4 +147,35 @@
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 13px;
+}
+@media (max-width: 900px) {
+  .fullScreen {
+      height: auto;
+      min-height: 100vh;
+  }
+
+  .leftSide {
+      width: 100%; 
+      padding: 30px 20px;
+  }
+
+  .rightSideBg {
+      display: none; 
+  }
+
+  .headerText {
+      font-size: 48px; 
+  }
+
+  .description {
+      font-size: 16px; 
+  }
+
+  .loginBox {
+      max-width: 100%; 
+  }
+
+  .buttonsGroup {
+      max-width: 100%;
+  }
 }
