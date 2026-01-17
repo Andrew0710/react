@@ -1,6 +1,7 @@
 
 import classes from './container3.module.css';
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 const logos = [
     "https://res.cloudinary.com/coolors/image/upload/v1757421975/media/1622439415c22e4475400432eae4619d1592a8bc-71x22.svg",
@@ -18,7 +19,28 @@ const logos = [
     "https://res.cloudinary.com/coolors/image/upload/v1757421653/media/Disney_wordmark.svg"
 ];
 
+const RANDOM_DESCRIPTIONS = [
+    { title: "Muted Olive", text: "Soft olive echoes sunlit fields and quiet forests." },
+    { title: "Ocean Breeze", text: "A refreshing blue that reminds of summer waves." },
+    { title: "Sunset Glow", text: "Warm orange tones bringing energy to your design." },
+    { title: "Royal Berry", text: "Deep purple elegance for sophisticated projects." },
+    { title: "Urban Grey", text: "Modern and sleek neutral for minimalism." }
+];
 export const Container3 = () => {
+    const [dailyColor, setDailyColor] = useState('000000');
+  
+    const [dailyText, setDailyText] = useState(RANDOM_DESCRIPTIONS[0]);
+
+   
+    useEffect(() => {
+        
+        const randomHex = Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+        setDailyColor(randomHex);
+
+        
+        const randomTextIndex = Math.floor(Math.random() * RANDOM_DESCRIPTIONS.length);
+        setDailyText(RANDOM_DESCRIPTIONS[randomTextIndex]);
+    }, []);
     return (
         <div className={classes.container}>
             <div className={classes.topSection}>
@@ -53,19 +75,31 @@ export const Container3 = () => {
                     </p>
                 </div>
 
-                <button className={classes.colorCard}>
+                
+                <Link 
+                    to={`/colors/${dailyColor}`} 
+                    className={classes.colorCard} 
+                    style={{ textDecoration: 'none' }} 
+                >
                     <span className={classes.cardLabel}>COLOR OF THE DAY</span>
                     <div className={classes.cardContent}>
-                        <Link to="/colors" style={{ textDecoration: 'none' }}>
-                        <div className={classes.colorSample} style={{backgroundColor: '#9AB973'}}></div>
-                        <div className={classes.colorInfo}>
-                            <h3>Muted Olive</h3>
-                            <p>Soft olive echoes sunlit fields and quiet forests, bringing gentle calm and understated natural elegance indoors.</p>
-                            <span className={classes.hexCode}>#9AB973</span>
+                        <div className={classes.colorHex}>
+                        <div 
+                            className={classes.colorSample} 
+                            style={{backgroundColor: `#${dailyColor}`}} 
+                        >
+                           
                         </div>
-                        </Link>
+                         <span className={classes.hexCode}>#{dailyColor}</span>
+                         </div>
+                        <div className={classes.colorInfo}>
+                            <h3>{dailyText.title}</h3>
+                            <p>{dailyText.text}</p>
+                            
+                        </div>
                     </div>
-                </button>
+                </Link>
+               
             </div>
         </div>
     );

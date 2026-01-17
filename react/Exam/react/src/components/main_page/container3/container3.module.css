@@ -62,10 +62,10 @@
 
 @keyframes scroll {
     0% {
-        transform: translateX(0); /* Починаємо з нуля */
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Їдемо вліво наполовину */
+        transform: translateX(-50%); 
     }
 }
 
@@ -91,6 +91,7 @@
 
 
 .colorCard {
+    height: auto;
     width: 35%;
     background-color: #f7f7f7; 
     border: none;
@@ -101,19 +102,20 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .colorCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 2px solid rgb(204, 204, 204);
 }
 
 .cardLabel {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 1.4vw;
+    font-weight: 400;
     text-transform: uppercase;
-    color: #666;
+    color: #000;
     letter-spacing: 0.5px;
 }
 
@@ -122,31 +124,35 @@
     gap: 20px;
     align-items: flex-start;
 }
-
+.colorHex{
+    display: flex;
+    flex-direction: column;
+}
 .colorSample {
     width: 70px;
     height: 70px;
     border-radius: 8px;
     flex-shrink: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   
 }
 
 .colorInfo h3 {
     margin: 0 0 5px 0;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: 700;
     color: #000;
 }
 
 .colorInfo p {
     margin: 0 0 10px 0;
-    font-size: 14px;
+    font-size: 1.3vw;
     color: #666;
     line-height: 1.4;
 }
 
 .hexCode {
-    font-size: 13px;
+    font-size: 1.2vw;
     font-weight: 500;
     color: #555;
     text-transform: uppercase;

@@ -13,6 +13,7 @@ import { Lover } from './components/lover/lover.component';
 import { Registration } from './components/registration/registration.component'; 
 import { Login } from './components/login/login.component';
 import {GeneratorPage} from './components/generatorPage/generatorPage.component';
+import { ColorDay } from './components/colorDay/colorDay.component';
 
 const MainPage = () => {
   return (
@@ -49,7 +50,7 @@ function App() {
 
           <Route path="/generator" element={<GeneratorPage />} />
 
-        
+          <Route path="/colors/:colorHex" element={<ColorDay />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>

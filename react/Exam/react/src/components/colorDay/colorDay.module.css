@@ -1,0 +1,179 @@
+.pageContainer {
+    width: 100%;
+    
+    font-family: 'Inter', sans-serif;
+    padding: 60px 0px;
+    
+}
+
+.container {
+    padding: 60px 50px;
+    gap: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    
+}
+.firstText{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ColorsLink{
+    
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 6px;
+}
+.ColorsLink:hover{
+    background-color: #c9c8c8;
+
+}
+
+.firstText span{
+    font-size: 1vw;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid rgb(205, 203, 203);
+    padding: 6px;
+}
+.colorInfo h1{
+    font-size: 5vw;
+    margin: 0px;
+}
+.colorInfo p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #666;
+
+}
+
+.titleName {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 18px;
+    
+}
+
+.ColorBlock {
+    width: 100%;
+    
+    height: 450px;
+    margin: 0 auto;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.ColorBlock span{
+    font-size: 5vw;
+    font-weight: 400;
+    color: white;
+    filter: brightness(80%);
+}
+
+.conversionSection {
+    margin-top: 20px;
+    width: 80%;
+   
+}
+
+.container2{
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conversionSection h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 100px;
+}
+
+
+.columnsWrapper {
+    display: flex;
+    gap: 20px; 
+    width: 100%;
+}
+
+
+.tableColumn {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 18px 20px;
+    font-size: 15px;
+   
+}
+
+.label {
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.tableColumn .row:nth-child(even) {
+    background-color: white;
+    
+}
+
+.value {
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+@media (max-width: 900px) {
+    .heroSection {
+        flex-direction: column-reverse; 
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .bigColorBlock {
+        width: 100%;
+        height: 200px;
+    }
+
+    .colorInfo {
+        max-width: 100%;
+    }
+
+    .titleName {
+        font-size: 48px;
+    }
+
+    .columnsWrapper {
+        flex-direction: column; 
+    }
+}
